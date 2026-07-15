@@ -1,10 +1,10 @@
 <div align="center">
 
-# AgentOS Toolbox
+<a href="https://fabiobrito01.github.io/agentos-windows-toolkit/">
+  <img src="assets/agentos-banner.svg" alt="AgentOS Toolbox — clique para explorar o catálogo interativo" width="100%">
+</a>
 
-### Automatize tarefas. Simplifique o Windows.
-
-Uma coleção aberta de utilitários portáteis para manutenção, diagnóstico, backup, produtividade e desenvolvimento no Windows.
+Uma coleção aberta de utilitários portáteis para manutenção, diagnóstico, backup, produtividade e desenvolvimento no Windows. **Clique no banner para abrir o catálogo interativo.**
 
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell)](https://learn.microsoft.com/powershell/)

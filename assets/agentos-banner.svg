@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">AgentOS Toolbox</title>
+  <desc id="desc">Banner animado da coleção de ferramentas para Windows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a15"/><stop offset=".56" stop-color="#101735"/><stop offset="1" stop-color="#201251"/></linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#21d4fd"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#21d4fd" stop-opacity=".28"/><stop offset="1" stop-color="#21d4fd" stop-opacity="0"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-opacity=".38"/></filter>
+    <clipPath id="screen"><rect x="690" y="67" width="430" height="276" rx="16"/></clipPath>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <circle cx="1080" cy="45" r="250" fill="url(#glow)"><animate attributeName="opacity" values=".5;1;.5" dur="5s" repeatCount="indefinite"/></circle>
+  <g opacity=".16" stroke="#8ca1da"><path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200"/><path d="M100 0V420M200 0V420M300 0V420M400 0V420M500 0V420M600 0V420M700 0V420M800 0V420M900 0V420M1000 0V420M1100 0V420"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="75" y="95" fill="#21d4fd" font-size="14" font-weight="700" letter-spacing="3">OPEN SOURCE · WINDOWS 10 E 11</text>
+    <text x="75" y="169" fill="#f3f5ff" font-size="58" font-weight="800" letter-spacing="-2">AgentOS</text>
+    <text x="75" y="226" fill="url(#brand)" font-size="58" font-weight="800" letter-spacing="-2">Toolbox</text>
+    <text x="78" y="272" fill="#abb6d8" font-size="20">Automatize tarefas. Simplifique o Windows.</text>
+    <g font-size="14" font-weight="650">
+      <rect x="76" y="310" width="120" height="35" rx="17" fill="#ffffff0d" stroke="#34416b"/><text x="96" y="333" fill="#e8ecff">67 ferramentas</text>
+      <rect x="208" y="310" width="119" height="35" rx="17" fill="#ffffff0d" stroke="#34416b"/><text x="231" y="333" fill="#e8ecff">Sem instalar</text>
+      <rect x="339" y="310" width="102" height="35" rx="17" fill="#ffffff0d" stroke="#34416b"/><text x="366" y="333" fill="#39d98a">MIT livre</text>
+    </g>
+    <text x="77" y="382" fill="#8795bf" font-size="14">CLIQUE NO BANNER PARA EXPLORAR O CATÁLOGO INTERATIVO →</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="670" y="45" width="470" height="320" rx="20" fill="#0d1224" stroke="#3a4670"/>
+    <circle cx="700" cy="70" r="6" fill="#ff6577"/><circle cx="721" cy="70" r="6" fill="#f6c760"/><circle cx="742" cy="70" r="6" fill="#39d98a"/>
+    <text x="915" y="75" text-anchor="middle" fill="#7180aa" font-family="Consolas,monospace" font-size="12">AGENTOS TOOLBOX</text>
+    <g clip-path="url(#screen)" font-family="Consolas,monospace">
+      <text x="700" y="120" fill="#21d4fd" font-size="14">PS&gt;</text><text x="735" y="120" fill="#e8ecff" font-size="14">explorar ferramentas</text>
+      <rect x="700" y="144" width="400" height="42" rx="8" fill="#151c35" stroke="#33416b"/>
+      <text x="718" y="170" fill="#39d98a" font-size="14">✓ Diagnóstico</text><text x="930" y="170" fill="#7180aa" font-size="12">RISCO BAIXO</text>
+      <rect x="700" y="196" width="400" height="42" rx="8" fill="#151c35" stroke="#33416b"/>
+      <text x="718" y="222" fill="#f6c760" font-size="14">◆ Backup inteligente</text><text x="918" y="222" fill="#7180aa" font-size="12">MODERADO</text>
+      <rect x="700" y="248" width="400" height="42" rx="8" fill="#151c35" stroke="#33416b"/>
+      <text x="718" y="274" fill="#8b7aff" font-size="14">⚡ Automação</text><text x="957" y="274" fill="#7180aa" font-size="12">PRONTO</text>
+      <text x="700" y="323" fill="#21d4fd" font-size="14">[██████████████████████]</text><text x="1003" y="323" fill="#e8ecff" font-size="14">100%</text>
+      <rect x="700" y="144" width="400" height="42" rx="8" fill="none" stroke="#21d4fd" stroke-width="2" opacity="0"><animate attributeName="y" values="144;196;248;144" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;1;0" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="700" y="311" width="0" height="16" rx="8" fill="url(#brand)" opacity=".35"><animate attributeName="width" values="0;400;400" keyTimes="0;.75;1" dur="4s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+</svg>
