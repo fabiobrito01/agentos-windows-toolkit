@@ -1,0 +1,22 @@
+name: Auditoria pública
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar caminhos pessoais e segredos comuns
+        shell: pwsh
+        run: |
+          $patterns = @('C:\\Users\\Micro', 'fabiobrito.01@gmail.com', 'ghp_[A-Za-z0-9]+')
+          $files = Get-ChildItem -Recurse -File | Where-Object FullName -NotMatch '\\.(git|github)\\'
+          $hits = $files | Select-String -Pattern $patterns
+          if ($hits) { $hits | Format-Table; throw 'Conteúdo pessoal ou segredo potencial encontrado.' }
+      - name: Validar catálogo
+        shell: pwsh
+        run: |
+          if (-not (Test-Path index.html)) { throw 'index.html ausente' }
+          $count = (Get-ChildItem scripts -Filter *.bat).Count
+          if ($count -lt 60) { throw "Catálogo incompleto: $count scripts" }
